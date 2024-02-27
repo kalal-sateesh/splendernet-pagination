@@ -26,7 +26,7 @@ const AppHeader = () => {
   return (
     <header>
       <nav>
-        <div>USER LOGIN</div>
+        <div>PAGINATION</div>
         <div className={styles.btn}>
           {!isAuth && <button onClick={handleLogin}>Login</button>}
           {isAuth && <button onClick={handleLogout}>Logout</button>}
