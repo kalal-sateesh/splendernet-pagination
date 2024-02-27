@@ -43,7 +43,10 @@ const Login = () => {
       }, 2000);
       return;
     }
-    const user = initData.email === email && initData.password === password;
+    const user = initData
+      ? initData.email === email && initData.password === password
+      : false;
+      
     if (user) {
       setTimeout(() => {
         // loginHandler();
