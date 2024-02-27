@@ -8,7 +8,7 @@ const AppHeader = () => {
 
   const initData = JSON.parse(localStorage.getItem("userData"));
 
-  const userName = initData.fname ? initData.fname : "";
+  const userName = initData ? initData.fname : "";
 
   const { isAuth, logoutHandler } = useContext(AuthContext);
   const handleLogin = () => {
