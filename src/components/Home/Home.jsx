@@ -33,7 +33,11 @@ const Home = () => {
   const totalButtons = Array.from(
     { length: Math.ceil(200 / todosPerPage) },
     (_, i) => (
-      <button key={i} onClick={() => handlePagination(i + 1)} className={styles.btn}>
+      <button
+        key={i}
+        onClick={() => handlePagination(i + 1)}
+        className={styles.btn}
+      >
         {i + 1}
       </button>
     )

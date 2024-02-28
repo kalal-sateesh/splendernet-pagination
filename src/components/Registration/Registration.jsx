@@ -110,10 +110,6 @@ const Registration = () => {
     }, 2000);
   };
 
-  const handleHome = () => {
-    navigate("/");
-  };
-
   return (
     <div className={styles.container}>
       <input
@@ -229,9 +225,6 @@ const Registration = () => {
       )}
       <br></br>
       <button onClick={handleRegister}>Signup</button>
-      <br></br>
-      <br></br>
-      <button onClick={handleHome}>Home</button>
     </div>
   );
 };
